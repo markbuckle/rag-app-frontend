@@ -8,8 +8,8 @@ https://main.d15um7o1z4plf1.amplifyapp.com/
 
 Here are my custom domains:
 
-https://podcastaichatbot.website/
-https://www.podcastaichatbot.website/
+<li>https://podcastaichatbot.website/</li>
+<li>https://www.podcastaichatbot.website/</li>
 
 ## Getting Started
 
