@@ -1,4 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Deploying the Ai Chatbot
+
+For this custom deployment I used my AiAppDeploy chatbot [Next.js](https://nextjs.org/) project that was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+Here is the AWS link to my app: 
+
+https://main.d15um7o1z4plf1.amplifyapp.com/
+
+Here are my custom domains:
+
+https://podcastaichatbot.website/
+https://www.podcastaichatbot.website/
 
 ## Getting Started
 
