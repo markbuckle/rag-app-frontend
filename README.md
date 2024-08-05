@@ -33,4 +33,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Deploy on AWS Amplify
+
+AWS Amplify provides a straightforward way to deploy and host your Next.js application. You can connect your GitHub repository to Amplify, and it will handle the build and deployment process.
+
+If you don’t already have a domain, you can register one through AWS Route 53. In the Route 53 console, create a hosted zone for your domain. Click on “Hosted zones” and then “Create hosted zone”. Enter your domain name and create the hosted zone. Add DNS records to route traffic to your application. 
+
+## Create a custom Domain
+
+You can do this on AWS Amplify but you may be able to do it cheaper on nampecheap.com. 
+
+Use Copilot to find the steps for adding a custom namecheap domain to AWS Amplify
