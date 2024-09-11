@@ -66,7 +66,7 @@ export default function SubmitQueryForm() {
 
   // disable submit button if form is being submitted and link it to submitForm
   const submitButton = (
-    <Button onClick={submitForm} disabled={isSubmitting} className="ml-4">
+    <Button onClick={submitForm} disabled={isSubmitting} className="ml-10">
       {/* the button will display a loading spinner only if its in the process of being submitted */}
       {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />} Submit
     </Button>
@@ -84,7 +84,7 @@ export default function SubmitQueryForm() {
       <CardContent>
         <div className="w-full">{textArea}</div>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="text-justify text-xs text-gray-600">
         Our AI chatbot uses the Amazon Bedrock Titan Text Express V1 LLM, which
         typically takes 10-15 seconds to generate a response. This model offers
         a balance between cost-effectiveness and performance. While it may not
