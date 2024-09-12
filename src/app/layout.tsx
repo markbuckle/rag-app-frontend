@@ -2,7 +2,7 @@
 
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { getSessionId } from "@/lib/getUserId";
+import { getSessionId } from "@/lib/getUser";
 import Link from "next/link";
 import { Code, FileText, Globe, Home, User, Video } from "lucide-react";
 import dynamic from "next/dynamic";
