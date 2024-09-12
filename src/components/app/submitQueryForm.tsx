@@ -6,7 +6,7 @@ import { Textarea } from "../ui/textarea";
 import createApiClient from "@/lib/getApiClient";
 import { useRouter } from "next/navigation";
 import { Loader2 } from "lucide-react";
-import { getSessionId } from "@/lib/getUser";
+import { getSessionId } from "@/lib/getUserId";
 import {
   Card,
   CardContent,

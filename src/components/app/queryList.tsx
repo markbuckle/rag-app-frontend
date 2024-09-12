@@ -4,7 +4,7 @@ import { QueryModel } from "@/api-client";
 import createApiClient from "@/lib/getApiClient";
 import { useEffect, useState } from "react";
 import QueryListItem from "./queryListItem";
-import { getSessionId } from "@/lib/getUser";
+import { getSessionId } from "@/lib/getUserId";
 import {
   Card,
   CardContent,
