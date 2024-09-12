@@ -15,13 +15,15 @@ import {
 import { Skeleton } from "../ui/skeleton";
 
 export default function QueryList() {
+  // helper functions to get API Client and unique user ID
   const api = createApiClient();
   const userId = getSessionId();
 
+  // useState hook to store a list of query items that we found for that user
   const [isLoading, setIsLoading] = useState(true);
   const [queryItems, setQueryItems] = useState<QueryModel[]>([]);
 
-  // Create a hook to call the API.
+  // Generate this list when the page first loads. Create a hook to call the list query endpoint.
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -42,7 +44,9 @@ export default function QueryList() {
     fetchData();
   }, []);
 
+  // check whether or not the query items exist
   let queryElements;
+  // if query items do not exist, display a loading skeleton
   if (isLoading) {
     queryElements = (
       <div className="space-y-2">
@@ -51,6 +55,7 @@ export default function QueryList() {
         <Skeleton className="h-6 w-full" />
       </div>
     );
+    // if query items exist, display them
   } else {
     queryElements = queryItems.map((queryItem) => {
       return <QueryListItem key={queryItem.queryId} {...queryItem} />;

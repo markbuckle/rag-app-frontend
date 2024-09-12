@@ -32,14 +32,16 @@ export default function ViewQueryPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        console.log("Fetching data for queryId:", queryId);
         const request = {
           queryId: queryId!,
         };
         const response = await api.getQueryEndpointGetQueryGet(request);
+        console.log("API response:", JSON.stringify(response, null, 2));
         setQueryItem(response);
       } catch (error) {
         console.error("Error fetching data:", error);
-        // setError("Failed to fetch data. Please try again later.");
+        setError("Failed to fetch data. Please try again later.");
       }
     };
     if (queryId) {
