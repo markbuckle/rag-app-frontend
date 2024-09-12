@@ -4,7 +4,7 @@ For this custom deployment I used my AiAppDeploy chatbot [Next.js](https://nextj
 
 Here is the AWS link to my app: 
 
-https://main.d15um7o1z4plf1.amplifyapp.com/
+https://main.d2plnc0kegitny.amplifyapp.com
 
 Here are my custom domains:
 
