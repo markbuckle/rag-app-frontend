@@ -85,11 +85,11 @@ export default function SubmitQueryForm() {
         <div className="w-full">{textArea}</div>
       </CardContent>
       <CardFooter className="text-justify text-xs text-gray-600">
-        Our AI chatbot uses the Amazon Bedrock Titan Text Express V1 LLM, which
-        typically takes 10-15 seconds to generate a response. This model offers
-        a balance between cost-effectiveness and performance. While it may not
-        match the advanced capabilities of premium models like Claude in terms
-        of language understanding and generation, it provides a practical
+        It typically takes 10-15 seconds to generate a response. Please refresh 
+        the page until the answer appears. Our AI chatbot uses the Amazon Bedrock 
+        Titan Text Express V1 LLM. This model offers a balance between 
+        cost-effectiveness and performance. While it may not match the advanced 
+        capabilities of premium models like Claude in terms of language understanding and generation, it provides a practical
         solution for many applications. The trade-off is lower costs at the
         expense of some performance metrics compared to more sophisticated
         models available through Amazon Bedrock. {submitButton}
