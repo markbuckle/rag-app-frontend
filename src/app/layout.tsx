@@ -49,7 +49,7 @@ function InnerLayout({
                 Source PDF
               </div>
             </Link>
-            <Link href="https://github.com/markbuckle/rag-app-backend">
+            <Link href="https://github.com/stars/markbuckle/lists/rag-app">
               <div className="flex hover:underline hover:text-slate-700">
                 <Code className="mr-1 h-4 w-4 my-auto" />
                 Project Source Code
