@@ -21,7 +21,7 @@ function InnerLayout({
 
   return (
     <main className="flex min-h-screen flex-col items-center px-2 lg:px-24 py-8 gap-2">
-      <header className="w-full max-w-3xl flex justify-between items-center text-xs">
+      <header className="w-full max-w-3xl flex flex-col sm:flex-row justify-between items-center text-xs">
         <Link href="/">
           <div className="text-slate-600 flex">
             <Home className="my-auto mr-1 h-4 w-4" /> Home
