@@ -21,24 +21,22 @@ function InnerLayout({
 
   return (
     <main className="flex min-h-screen flex-col items-center px-2 lg:px-24 py-8 gap-2">
-      <header className="w-full max-w-3xl flex flex-col gap-2">
-        <div className="flex justify-center sm:justify-end items-center text-xs gap-2">
-          <Link href="/">
-            <div className="text-slate-600 flex">
-              <Home className="my-auto mr-1 h-4 w-4" /> Home
-            </div>
-          </Link>
-          <Link href="https://github.com/stars/markbuckle/lists/rag-app">
-            <div className="text-slate-600 flex">
-              <Code className="my-auto mr-1 h-4 w-4" /> Source Code
-            </div>
-          </Link>
-        </div>
-        <div className="flex flex-col justify-between sm:flex-row gap-2">
-          <div className="bg-slate-300 p-1 rounded-sm text-slate-600 text-sm flex">
-            <User className="my-auto mr-1 h-4 w-4" /> User Id: {truncatedUserId}
+      <header className="w-full max-w-3xl flex flex-col sm:flex-row justify-between items-center text-xs">
+        <Link href="/">
+          <div className="text-slate-600 flex">
+            <Home className="my-auto mr-1 mb-1 h-4 w-4" /> Home
           </div>
-          <div className="bg-slate-300 p-1 rounded-sm text-slate-600 text-sm flex">
+        </Link>
+        <Link href="https://github.com/stars/markbuckle/lists/rag-app">
+          <div className="text-slate-600 flex">
+            <Code className="my-auto ml-1 h-4 w-4" /> Source Code
+          </div>
+        </Link>
+        <div className="flex gap-2">
+          <div className="bg-slate-300 p-1 rounded-sm text-slate-600 flex">
+            <User className="my-auto mr-2 h-4 w-4" /> User Id: {truncatedUserId}
+          </div>
+          <div className="bg-slate-300 p-1 rounded-sm text-slate-600 flex">
             <Globe className="my-auto mr-2 h-4 w-4" />
             API Endpoint: "{getApiUrl()}"
           </div>
